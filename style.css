@@ -30,8 +30,10 @@ body {
 
 
 button{
-  background-color: rgb(188, 140, 233);
-  color: #fff;
   padding: 10px;
-  font-size: 16px;
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 15px;
+  border: 5px;
+  transition: opacity 0.1s ease;
 }
