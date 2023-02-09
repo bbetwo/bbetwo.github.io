@@ -5,11 +5,14 @@ const btn = document.getElementById('btn')
 
 let timer = 0;
 
+function handInterval(){
+  setInterval(blur, 30);
+}
 
 function blur() {
   timer++;
   if (timer >= 100) {
-    clearInterval(int);
+    clearInterval(handInterval);
   }
 
   loadText.textContent = `${timer}%`;
@@ -22,6 +25,4 @@ const scale = (num, in_min, in_max, out_min, out_max) => {
   return ((num - in_min) * (out_max - out_min)) / (in_max - in_min) + out_min;
 };
 
-btn.addEventListener('click', ()=>{
-  setInterval(blur, 30);
-})
+btn.addEventListener('click', handInterval )
