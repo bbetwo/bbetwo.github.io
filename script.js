@@ -4,15 +4,15 @@ const loadText = document.querySelector(".loading-text");
 const btn = document.getElementById('btn')
 
 let timer = 0;
-
+let inter;
 function handInterval(){
-   setInterval(blur, 30);
+  inter=setInterval(blur, 30);
 }
 
 function blur() {
   timer++;
   if (timer >= 100) {
-    clearInterval(handInterval);
+    clearInterval(inter);
   }
 
   loadText.textContent = `${timer}%`;
