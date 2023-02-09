@@ -6,7 +6,7 @@ const btn = document.getElementById('btn')
 let timer = 0;
 
 function handInterval(){
-  setInterval(blur, 30);
+  return setInterval(blur, 30);
 }
 
 function blur() {
