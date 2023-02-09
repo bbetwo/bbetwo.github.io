@@ -13,6 +13,7 @@ function blur() {
   timer++;
   if (timer >= 100) {
     clearInterval(inter);
+    btn.style.opacity = 0;
   }
 
   loadText.textContent = `${timer}%`;
